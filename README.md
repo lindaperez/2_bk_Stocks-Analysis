@@ -12,6 +12,5 @@ The yearly return: is the percentage difference in price from the beginning of t
 
 DAQO (Ticker:DQ)		
 		
-Year	Total Daily Volume	Return
-2018	107873900	-62.60%![image](https://user-images.githubusercontent.com/1729991/153507089-08c4d035-161a-472e-be82-5e70a62f07f0.png)
+(https://user-images.githubusercontent.com/1729991/153507089-08c4d035-161a-472e-be82-5e70a62f07f0.png)
 It dropped over 63% in 2018  probably you can offer some better rather than DQ.
