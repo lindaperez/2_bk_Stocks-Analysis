@@ -1,17 +1,46 @@
-# stocks_analysis
+# AllStocksAnalysis
+## Overview of Project
 
-About the project
+### Purpose
+The purpose is to reflect some techniques to improve the development of macros using Excel and VBA. To do this, it was used a dataset in excel named AllStockAnalysis where it was perform the logic to anwer how actively can be a set of stocks and the real value of every stock in the years 2017 and 2018. Particularly, the client require the total daily volume and the yearly return of all of the stocks.
 
-In this project the challege is to perform an analysis to determine how to diversify the funds of a particular company in the Energy Industry
+##Results: 
+### Stock performance 2017 and 2018
 
-Daily volume: is the total number of shares traded throughout the day; #it measures how actively a stock is traded. 
+In 2017, The stock DQ was not very actively traded, with a minimum volume of 35,796,200. The most actively traded and valuable was FSLR with 684,181,400 total daily volume . The  yearly return of the ticker DQ was the most higher with 199.4% 
 
-The yearly return: is the percentage difference in price from the beginning of the year to the end of the year. 
+![This is an image](https://github.com/lindaperez/kickstarter-analysis/blob/main/Resources/VBA_Challenge_2017_Prev.png)
 
-1. find the total daily volume and yearly return for each stock. 
+Picture from AllStocksAnalysis non Refactored 2017
 
-DAQO (Ticker:DQ)		
-		
-![image](https://user-images.githubusercontent.com/1729991/153509456-39338fc8-90ee-4418-bf49-d694321be95c.png)
+In 2018, ENPH was the most actively traded with 607,473,500 and a very high return of 81.9%. 
+The other most important stock was RUN with a higher volume of 502,757,100 and the most higher return of the year 84%. The ticker DQ was down of the average in terms of daily trading and had loss of 62.6% 
 
-It dropped over 63% in 2018  probably you can offer some better rather than DQ.
+
+![This is an image](https://github.com/lindaperez/kickstarter-analysis/blob/main/Resources/VBA_Challenge_2018_Prev.png)
+
+Picture from AllStocksAnalysis non Refactored 2018
+
+### Excecution Times 2017 
+
+
+Picture from AllStocksAnalysis 2017
+![This is an image](https://github.com/lindaperez/kickstarter-analysis/blob/main/Resources/VBA_Challenge_2017.png)
+
+Picture from AllStocksAnalysis 2018
+![This is an image](https://github.com/lindaperez/kickstarter-analysis/blob/main/Resources/VBA_Challenge_2018.png)
+
+
+## Summary
+
+## What are the advantages or disadvantages of refactoring code?
+### Advantages
+- If it is a large dataset it will run in a shorter time.
+- It is more readible
+- It is better organized 
+### Disadvantages
+
+## How do these pros and cons apply to refactoring the original VBA script?
+
+###
+
