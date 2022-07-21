@@ -1,10 +1,12 @@
-# AllStocksAnalysis
+# Stocks Analysis
 ## Overview of Project
 
 ### Purpose
-The purpose is to reflect on some techniques to improve the development of macros using Excel and VBA. To do this it was used a dataset in excel named AllStockAnalysis where it was performed several steps to answer how actively was a set of stocks and what was the real value of every stock in the years 2017 and 2018.
 
-##Results:
+The purpose is to discover and automate the analysis of how actively was a set of stocks and what was the real value of every stock in 2017 and 2018.
+
+
+## Results:
 ### Stock performance 2017 and 2018
 
 In 2017, The stock DQ was not very actively traded, with a minimum volume of 35,796,200. The most actively traded and valuable was FSLR with 684,181,400 of total daily volume. The  yearly return of the ticker DQ was the most higher with 199.4%
