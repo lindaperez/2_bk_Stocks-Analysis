@@ -6,6 +6,10 @@
 The purpose is to discover and automate the analysis of how actively was a set of stocks and what was the real value of every stock in 2017 and 2018.
 
 
+### Data source 
+
+[Green Stock Dataset](https://github.com/lindaperez/stocks_analysis/blob/main/green_stocks.xlsm)
+
 ## Results:
 ### Stock performance 2017 and 2018
 
