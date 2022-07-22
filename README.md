@@ -1,49 +1,87 @@
 # Stocks Analysis
+
+
 ## Overview of Project
 
-### Purpose
+Is it a good idea to invest in a company (DQ) that makes silicon wafers for Solar Panels?
 
-The purpose is to discover and automate the analysis of how actively was a set of stocks and what was the real value of every stock in 2017 and 2018.
+
+
+### Objective
+
+ The purpose is to discover, automate and analyze how actively was a set of stocks and what was the real value of every stock in 2017 and 2018 to determine if investing in DQ a good decision.
+
 
 
 ### Data source 
 
-[Green Stock Dataset](https://github.com/lindaperez/stocks_analysis/blob/main/green_stocks.xlsm)
+An excel file with the stock data. [Green Stock Dataset](https://github.com/lindaperez/stocks_analysis/blob/main/green_stocks.xlsx?raw=true)
+
+![image](https://user-images.githubusercontent.com/1729991/180491463-29246473-0e58-468c-aace-36290fe0c04f.png)
+
+  Facts:
+  - Yearly volume: How often a stock gets traded. 
+  - Yearly return: Is the percentage increase or decrease in price from the beggining of the year to the end of the year. 
+    - Example:  if you invested in DQ at the beginning of the year and never sold, the yearly return is how much your investment grew or shrunk by the end of the year.
+
+
+
+[Non refactored solution](https://github.com/lindaperez/stocks_analysis/blob/main/green_stocks.xlsm?raw=true)
+
+
+[Solution](https://github.com/lindaperez/stocks_analysis/blob/main/VBA_Challenge.xlsm?raw=true)
+
+
 
 ## Results:
+
+
 ### Stock performance 2017 and 2018
 
 In 2017, The stock DQ was not very actively traded, with a minimum volume of 35,796,200. The most actively traded and valuable was FSLR with 684,181,400 of total daily volume. The  yearly return of the ticker DQ was the most higher with 199.4%
 
-![This is an image](https://github.com/lindaperez/stocks_analysis/blob/main/Resources/VBA_Challenge_2017_Prev.png)
 
-Picture from AllStocksAnalysis non Refactored 2017
+![Picture Analysis non Refactored: 2017](https://user-images.githubusercontent.com/1729991/180496113-2bb7300e-c7ae-4d6d-aaf2-24362364f2aa.png)<img width="280" alt="Screen Shot 2022-07-22 at 10 55 14 AM" src="https://user-images.githubusercontent.com/1729991/180496621-c9b0bb0a-e2fe-4c80-9156-20ce9fd184cd.png">
+
+
+
 
 In 2018, ENPH was the stock most actively traded with 607,473,500 and a very high return of 81.9%. The other most important stock was RUN with a higher volume of 502,757,100 with the higher return of the year 84%. The ticker DQ was down from the average in terms of daily trading and had a loss of 62.6%
 
-![This is an image](https://github.com/lindaperez/stocks_analysis/blob/main/Resources/VBA_Challenge_2018_Prev.png)
 
-Picture from AllStocksAnalysis non Refactored 2018
-
-### Execution Times 2017 and 2018
-
-The execution times in 2017 were 0.3125 and 0.1484, before the refactor and after the refactor respectively, the improvement with the refactor of the performance was around 53% approximately.
-
-In the first development, the approach was to traverse the whole sheet and find volumes and returns one time for every stock. The complexity for this process was  10*3013, O(n*m),  where n is the number of different stocks and m is the total number of rows.
-
-After the refactor, the approach was to traverse the whole sheet finding volumes and returns only one time for all the stocks.  The complexity of this process is only 3013 O(m), where m is the number of rows in the sheet.
-
-In this sense, if it is given 1000 stocks the complexity with the first approach would be 10000*3013 O(m*n). But the complexity for the second approach would be the same as 3013 O(m).  
+![Picture Analysis non Refactored: 2018](https://user-images.githubusercontent.com/1729991/180496299-3cc8dd3d-8519-474a-be9d-d9a642e0205f.png)
+<img width="280" alt="Screen Shot 2022-07-22 at 10 53 46 AM" src="https://user-images.githubusercontent.com/1729991/180496424-019104ea-4d1d-4c35-80fa-54252440526b.png">
+  
 
 
-Picture from AllStocksAnalysis 2017
-![This is an image](https://github.com/lindaperez/stocks_analysis/blob/main/Resources/VBA_Challenge_2017.png)
 
-The execution times in 2018 were 0.3438 and 0.1484 before the refactor and after the refactor respectively, the improvement of the performance was around 59% approximately.
+### Approaches 
+
+In the first development, the approach was to traverse the whole sheet and find volumes and returns one time for every stock. The complexity for this process was  O(n*m),  where n is the number of different stocks and m is the total number of rows a total of 10*3013.
+
+After the refactor, the approach was to traverse the whole sheet finding volumes and returns only one time for all the stocks.  The complexity of this process is only  O(m), where m is the number of rows in the sheet, a total of 3013.
+
+In this sense, if it is given 1000 stocks the complexity with the first approach would be 10000*3013 O(m*n). But the complexity for the second approach would be only the number of rows, O(m).  
+
+### Analysis of execution times (2017,2018)
 
 
-Picture from AllStocksAnalysis 2018
-![This is an image](https://github.com/lindaperez/stocks_analysis/blob/main/Resources/VBA_Challenge_2018.png)
+The execution times in 2018 were 0.3125 and 0.1797 before the refactor and after the refactor respectively, the improvement of the performance was around 42% approximately.
+
+
+- Picture Analysis Refactored: 2017
+<img width="575" alt="Screen Shot 2022-07-22 at 11 19 17 AM" src="https://user-images.githubusercontent.com/1729991/180500159-0c918810-39c5-46fb-8284-a99ae6ec0ab9.png">
+
+
+
+The execution times in 2018 were 0.3438 and 0.2227 before the refactor and after the refactor respectively, the improvement of the performance was around 35% approximately.
+
+
+- Picture Analysis Refactored: 2018
+<img width="573" alt="Screen Shot 2022-07-22 at 11 16 50 AM" src="https://user-images.githubusercontent.com/1729991/180499803-1ef6a14a-56a9-444f-8e13-0900c5bd18e8.png">
+
+
+
 
 
 ## Summary
